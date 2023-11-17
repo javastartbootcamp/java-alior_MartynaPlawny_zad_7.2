@@ -52,10 +52,12 @@ public class Main {
             int maximum = numbersList.get(0);
             int minimum = numbersList.get(0);
             for (int i = 1; i < numbersList.size(); i++) {
-                if (maximum < numbersList.get(i))
+                if (maximum < numbersList.get(i)) {
                     maximum = numbersList.get(i);
-                if (minimum > numbersList.get(i))
+                }
+                if (minimum > numbersList.get(i)) {
                     minimum = numbersList.get(i);
+                }
             }
 
             System.out.println("Najmniejsza liczba w liście to " + minimum);
